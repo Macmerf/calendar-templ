@@ -112,19 +112,33 @@
     }
   }
 }
-.vc-arrows-container {
-  display: none;
-}
-.vc-title {
-  display: none;
-}
-.vc-header {
-  height: 57px;
+.vc-popover-caret {
+  border-top: 1px solid #e24c3b;
+  border-left: 1px solid #e24c3b;
+  background: #e24c3b;
 }
 .vc-highlight {
   background-color: #e24c3b;
 }
 
+.vc-nav-popover-container {
+
+  background-color: #e24c3b;
+  border: 1px solid;
+  border-color: #e24c3b;
+
+}
+
+.vc-nav-arrow:hover {
+  background-color: #d63e2d;
+}
+.vc-nav-title:hover {
+  background-color: #d63e2d;
+}
+
+.vc-nav-item:hover {
+  background-color: #d63e2d;
+}
 .vc-day {
   position: relative;
   min-height: 40px;
@@ -180,3 +194,21 @@
   right:15px;
   cursor: pointer;
 }
+.datepicker-wrapper{
+  position: relative;
+}
+.w-50{
+ width: 50%;
+}
+.form-control[type="date"][readonly] {
+  background-color: #ffffff;
+ }
+ .input-date-wrapper{
+   position: relative;
+   svg{
+     position: absolute;
+     right: 10px;
+     top: 30%;
+     height: 40%;
+   }
+ }
