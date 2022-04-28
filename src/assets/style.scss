@@ -1,0 +1,182 @@
+.calendar-wrapper {
+  position: absolute;
+  height: 410px;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.calendar {
+  position: relative;
+  height: 410px;
+}
+.custom-month-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  box-shadow: 0px 1px 8px rgba(34, 68, 142, 0.2);
+  border-radius: 4px;
+  width: 112px;
+  height: 408px;
+  z-index: 9997;
+  background: #fff;
+  top: 55px;
+  left: 45px;
+
+  .custom-month {
+    padding: 4px 16px;
+    cursor: pointer;
+    width: 80px;
+    &.active {
+      background: #e24c3b;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
+
+.custom-year-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  box-shadow: 0px 1px 8px rgba(34, 68, 142, 0.2);
+  border-radius: 4px;
+  width: 68px;
+  height: 408px;
+  z-index: 9999;
+  background: #fff;
+  top: 55px;
+  right: 45px;
+
+  .custom-year {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 4px 16px;
+    cursor: pointer;
+    width: 53%;
+
+    &.active {
+      background: #e24c3b;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
+
+.open-months {
+  position: absolute;
+  z-index: 9996;
+  background: #fff;
+  top: 15px;
+  left: 45px;
+  border: none;
+  width: 112px;
+  height: 40px;
+  &:hover {
+    color: #e24c3b;
+    background: #f8f7fa;
+    border-radius: 8px;
+    cursor: pointer;
+    path {
+      stroke: #e24c3b;
+    }
+  }
+}
+
+.open-years {
+  position: absolute;
+  z-index: 9996;
+  background: #fff;
+  top: 15px;
+  right: 45px;
+  border: none;
+  width: 68px;
+  height: 40px;
+  &:hover {
+    color: #e24c3b;
+    background: #f8f7fa;
+    border-radius: 8px;
+    cursor: pointer;
+    path {
+      stroke: #e24c3b;
+    }
+  }
+}
+.vc-arrows-container {
+  display: none;
+}
+.vc-title {
+  display: none;
+}
+.vc-header {
+  height: 57px;
+}
+.vc-highlight {
+  background-color: #e24c3b;
+}
+
+.vc-day {
+  position: relative;
+  min-height: 40px;
+  min-width: 40px;
+  z-index: 1;
+}
+.vc-day-content:focus {
+  font-weight: var(--font-bold);
+  background-color: transparent;
+}
+.vc-day-content {
+  width: 36px;
+  height: 36px;
+  font-weight: 400;
+}
+.vc-highlight {
+  width: 36px;
+  height: 36px;
+}
+
+.vc-container {
+  border:none;
+  box-shadow: 0px 1px 8px rgba(34, 68, 142, 0.2);
+  border-radius: 12px;
+  padding-bottom: 50px;
+}
+.vc-weekday{
+  color: #3F3A38;
+}
+.custom-calendar-cancel{
+  position: absolute;
+  background: #F8F7FA;
+  border-radius: 8px;
+  border:none;
+  color: #3F3A38;
+  font-weight: 600;
+  padding: 12px 38px;
+  bottom: 40px;
+  left:15px;
+  cursor: pointer;
+}
+
+.custom-calendar-set-date{
+  position: absolute;
+  background: #E24C3B;
+  border-radius: 8px;
+  border:none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 38px;
+  white-space: nowrap;
+  bottom: 40px;
+  right:15px;
+  cursor: pointer;
+}
