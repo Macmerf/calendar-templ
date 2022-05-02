@@ -1,9 +1,7 @@
 .calendar-wrapper {
   position: absolute;
   height: 410px;
-  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family:Roboto,sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -210,5 +208,221 @@
      right: 10px;
      top: 30%;
      height: 40%;
+   }
+ }
+
+ @media (min-width:163.5vw) {
+   
+  .calendar-wrapper {
+    position: absolute;
+    height: 28.7vw;
+    font-family:Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 0.98vw;
+    line-height: 1.68vw;
+  }
+  .calendar {
+    position: relative;
+    height: 28.7vw;
+  }
+  .custom-month-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.56vw 0px;
+    box-shadow: 0px 0.07vw 0.56vw rgba(34, 68, 142, 0.2);
+    border-radius: 0.28vw;
+    width: 7.84vw;
+    height: 28.56vw;
+    z-index: 9998;
+    background: #fff;
+    top: 3.85vw;
+    left: 3.15vw;
+  
+    .custom-month {
+      padding: 0.28vw 1.12vw;
+      cursor: pointer;
+      width: 5.6vw;
+      &.active {
+        background: #e24c3b;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .custom-year-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.56vw 0px;
+    box-shadow: 0px 0.07vw 0.56vw rgba(34, 68, 142, 0.2);
+    border-radius: 0.28vw;
+    width: 4.76vw;
+    height: 28.56vw;
+    z-index: 9999;
+    background: #fff;
+    top: 55px;
+    right: 45px;
+  
+    .custom-year {
+      font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+      font-weight: 400;
+      font-size: 0.98vw;
+      line-height: 24px;
+      padding: 0.28vw 1.12vw;
+      cursor: pointer;
+      width: 53%;
+  
+      &.active {
+        background: #e24c3b;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .open-months {
+    position: absolute;
+    z-index: 9996;
+    background: #fff;
+    top: 1.05vw;
+    left: 45px;
+    border: none;
+    width: 112px;
+    height: 2.8vw;
+    &:hover {
+      color: #e24c3b;
+      background: #f8f7fa;
+      border-radius: 0.56vw;
+      cursor: pointer;
+      path {
+        stroke: #e24c3b;
+      }
+    }
+  }
+  
+  .open-years {
+    position: absolute;
+    z-index: 9996;
+    background: #fff;
+    top: 1.05vw;
+    right: 45px;
+    border: none;
+    width: 68px;
+    height: 2.8vw;
+    &:hover {
+      color: #e24c3b;
+      background: #f8f7fa;
+      border-radius: 0.56vw;
+      cursor: pointer;
+      path {
+        stroke: #e24c3b;
+      }
+    }
+  }
+  .vc-popover-caret {
+    border-top: 0.07vw solid #e24c3b;
+    border-left: 0.07vw solid #e24c3b;
+    background: #e24c3b;
+  }
+  .vc-highlight {
+    background-color: #e24c3b;
+  }
+  
+  .vc-nav-popover-container {
+  
+    background-color: #e24c3b;
+    border: 0.07vw solid;
+    border-color: #e24c3b;
+  
+  }
+  
+  .vc-nav-arrow:hover {
+    background-color: #d63e2d;
+  }
+  .vc-nav-title:hover {
+    background-color: #d63e2d;
+  }
+  
+  .vc-nav-item:hover {
+    background-color: #d63e2d;
+  }
+  .vc-day {
+    position: relative;
+    min-height: 2.8vw;
+    min-width: 2.8vw;
+    z-index: 1;
+  }
+  .vc-day-content:focus {
+    font-weight: var(--font-bold);
+    background-color: transparent;
+  }
+  .vc-day-content {
+    width: 2.52vw;
+    height: 2.52vw;
+    font-weight: 400;
+  }
+  .vc-highlight {
+    width: 2.52vw;
+    height: 2.52vw;
+  }
+  
+  .vc-container {
+    border:none;
+    box-shadow: 0px 0.07vw 0.56vw rgba(34, 68, 142, 0.2);
+    border-radius: 0.84vw;
+    padding-bottom: 3.5vw;
+  }
+  .vc-weekday{
+    color: #3F3A38;
+  }
+  .custom-calendar-cancel{
+    position: absolute;
+    background: #F8F7FA;
+    border-radius: 0.56vw;
+    border:none;
+    color: #3F3A38;
+    font-weight: 600;
+    padding: 0.84vw 2.66vw;
+    bottom: 2.8vw;
+    left:1.05vw;
+    cursor: pointer;
+  }
+  
+  .custom-calendar-set-date{
+    position: absolute;
+    background: #E24C3B;
+    border-radius: 0.56vw;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.84vw 2.66vw;
+    white-space: nowrap;
+    bottom: 2.8vw;
+    right:1.05vw;
+    cursor: pointer;
+  }
+  .datepicker-wrapper{
+    position: relative;
+  }
+  .w-50{
+   width: 50%;
+  }
+  .form-control[type="date"][readonly] {
+    background-color: #ffffff;
+   }
+   .input-date-wrapper{
+     position: relative;
+     svg{
+       position: absolute;
+       right: 0.7vw;
+       top: 30%;
+       height: 40%;
+     }
    }
  }
